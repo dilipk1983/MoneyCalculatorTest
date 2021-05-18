@@ -23,7 +23,7 @@ namespace MoneyAssessment.Tests
         [TestInitialize]
         public void TestInitialize()
         {
-            MoneyCalc = new MoneyCalculator();
+            MoneyCalc = new MoneyCalculator(new MockLogger());
         }
         #endregion
 

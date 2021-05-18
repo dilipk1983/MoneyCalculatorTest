@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BigDataHelper.cs" />
+    <Compile Include="MockLogger.cs" />
     <Compile Include="MoneyCalculatorFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
