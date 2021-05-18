@@ -8,8 +8,8 @@
     <ProjectGuid>{79C839AD-D084-4593-917D-B3D4CB5FFB85}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MoneyCalculator.Tests</RootNamespace>
-    <AssemblyName>MoneyCalculator.Tests</AssemblyName>
+    <RootNamespace>MoneyAssessment.Tests</RootNamespace>
+    <AssemblyName>MoneyAssessment.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BigDataHelper.cs" />
     <Compile Include="MoneyCalculatorFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -56,7 +57,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MoneyCalculator\MoneyAssessment.csproj">
+    <ProjectReference Include="..\MoneyAssessment\MoneyAssessment.csproj">
       <Project>{b5c78b14-caaf-420e-8d30-2eeb215ee627}</Project>
       <Name>MoneyAssessment</Name>
     </ProjectReference>

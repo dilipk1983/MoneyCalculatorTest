@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B5C78B14-CAAF-420E-8D30-2EEB215EE627}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MoneyCalculator</RootNamespace>
-    <AssemblyName>MoneyCalculator</AssemblyName>
+    <RootNamespace>MoneyAssessment</RootNamespace>
+    <AssemblyName>MoneyAssessment</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
