@@ -16,7 +16,9 @@ SET PATH=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\I
 cd output\tests
 VSTest.Console.exe MoneyAssessment.Tests.dll /logger:trx;LogFileName=TestResults.trx
 
-pushd "%~dp0"
+cd..
+cd..
+
 Echo "Running application...
 call output\MoneyAssessment.exe
 
