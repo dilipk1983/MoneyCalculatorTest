@@ -45,7 +45,7 @@ namespace MoneyAssessment.BusinessLogic
             logger.Info("Input monies Count >> " + monies.Count());
             if (monies.GroupBy(g => g.Currency.ToUpper()).Skip(1).Any())
             {
-                logger.Error("all monies are not of same currencies (inpiut currencies ): " + string.Join(",", monies.Select(m => m.Currency).Distinct()));
+                logger.Error("All monies are not of same currencies (input currencies ): " + string.Join(",", monies.Select(m => m.Currency).Distinct()));
                 throw new ArgumentException("All monies are not in the same currency.");
             }
             return monies.Where(m => m.Amount == monies.Max(money => money.Amount)).FirstOrDefault();
@@ -61,11 +61,11 @@ namespace MoneyAssessment.BusinessLogic
             logger.Info("Input monies Count >> " + monies.Count());
             var result = from m in monies
                          group m by m.Currency.ToUpper() into groupped
-                         orderby groupped.Key
+                         orderby groupped.Key // sorting done over currency otherwise data would have been inconsistent for different test case evaluation
                          select new Money(
                              groupped.Key,
                              groupped.Sum(m => m.Amount)
-                         );
+                         ); 
             return result;
         }
 

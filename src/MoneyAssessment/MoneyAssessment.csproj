@@ -27,7 +27,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\output\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -48,8 +48,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Action\IActionHandler.cs" />
+    <Compile Include="Action\MaxMoneyActionHandler.cs" />
+    <Compile Include="Action\SumPerCurrencyActionHandler.cs" />
     <Compile Include="BusinessLogic\Money.cs" />
     <Compile Include="BusinessLogic\MoneyCalculator.cs" />
+    <Compile Include="Helper\Common.cs" />
+    <Compile Include="Helper\Extensions.cs" />
     <Compile Include="Interfaces\IMoney.cs" />
     <Compile Include="Interfaces\IMoneyCalculator.cs" />
     <Compile Include="Logger\ILogger.cs" />
@@ -59,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
