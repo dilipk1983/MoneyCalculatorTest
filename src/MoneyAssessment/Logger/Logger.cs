@@ -3,6 +3,10 @@ using System;
 
 namespace MoneyAssessment
 {
+    /// <summary>
+    /// Singlton implementation of logger class
+    /// Could be handled better with dependency injection framework 
+    /// </summary>
     public class Logger : ILogger
     {
         #region Field
