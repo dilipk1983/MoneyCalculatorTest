@@ -3,7 +3,7 @@
 easyJet Interview Assessment 
 
 # NOTE : 
-	**Build scripts are created for 62-bit system with visual studio 2019 community edition
+	**Build scripts are created for 64-bit system with visual studio 2019 community edition
 	If your configuration is different then please change path for MSBuild.exe and VSTest.Console.exe in "Build Test Run.cmd" file**
 
 Money - Candidate Instructions 
