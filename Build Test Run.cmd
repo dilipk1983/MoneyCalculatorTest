@@ -4,7 +4,7 @@ SET SolutionPath=src\MoneyAssessment.sln
 
 
 Echo "Restoring Packages..."
-call nuget\nuget.exe restore %SolutionPath%
+call .nuget\nuget.exe restore %SolutionPath%
 
 Echo "Building Solution..."
 
